@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="2" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Order" representedClassName="Order" syncable="YES">
+        <attribute name="dataBonusItems" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="dataGiftItems" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="dataItems" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="deliveryType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="discount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paymentType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="shippingAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shippingTotal" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="timeString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="venueId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="venueName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="walletDiscount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Venue" representedClassName="Venue" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="venueId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="workingTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Order" positionX="-63" positionY="-18" width="128" height="300"/>
+        <element name="Venue" positionX="-63" positionY="27" width="128" height="150"/>
+    </elements>
+</model>
